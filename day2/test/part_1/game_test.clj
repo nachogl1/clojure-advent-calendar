@@ -1,5 +1,5 @@
-(ns kataskeleton.game-test
-  (:require [kataskeleton.game :refer :all])
+(ns part_1.game-test
+  (:require [part_1.game :refer :all])
   (:use [midje.sweet]))
 
 (facts "Playing a  game of Rock, Paper, Scissors"

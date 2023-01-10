@@ -1,4 +1,4 @@
-(ns kataskeleton.game
+(ns part_2.game
   (:gen-class))
 
 (defn play-rock-against [opponent]

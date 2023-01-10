@@ -1,8 +1,8 @@
-(ns kataskeleton.main
+(ns part_1.main
   (:gen-class)
   (:require [clojure.string :as str]
-            [kataskeleton.mapping :refer :all]
-            [kataskeleton.scoring :refer :all]))
+            [part_1.mapping :refer :all]
+            [part_1.scoring :refer :all]))
 
 
 (defn extract-game [game]

@@ -1,5 +1,5 @@
-(ns kataskeleton.mapping_test
-  (:require [kataskeleton.mapping :refer :all])
+(ns part_1.mapping_test
+  (:require [part_1.mapping :refer :all])
   (:use [midje.sweet]))
 
 (facts "Mapping letters to plays"

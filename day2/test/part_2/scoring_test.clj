@@ -1,5 +1,5 @@
-(ns kataskeleton.scoring_test
-  (:require [kataskeleton.scoring :refer :all])
+(ns part_2.scoring_test
+  (:require [part_2.scoring :refer :all])
   (:use [midje.sweet]))
 
 (facts "Scoring a  game of Rock, Paper, Scissors"

@@ -1,4 +1,4 @@
-(ns kataskeleton.mapping
+(ns part_1.mapping
   (:gen-class))
 
 (def known-plays {:rock ["A" "X"] :paper ["B" "Y"] :scissors ["C" "Z"]})

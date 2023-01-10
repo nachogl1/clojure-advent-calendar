@@ -1,6 +1,6 @@
-(ns kataskeleton.scoring
+(ns part_2.scoring
   (:gen-class)
-  (:require [kataskeleton.game :refer :all]))
+  (:require [part_2.game :refer :all]))
 
 (defn score-play [outcome]
   (case outcome
