@@ -4,7 +4,8 @@
 
 (facts "Playing a  game of Rock, Paper, Scissors"
        (facts "Player plays Rock"
-              (let [player :rock]
+              (let [player lein midje
+                    :rock]
                 (fact "Rock beats scissors" (play-game player :scissors) => :win)
                 (fact "Rock loses against paper" (play-game player :paper) => :lose)
                 (fact "Rock draws against itself" (play-game player :rock) => :draw)))

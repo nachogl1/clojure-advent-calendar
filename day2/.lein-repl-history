@@ -1,0 +1,13 @@
+(+ 1 1)
+(println "Hello world")
+clear
+cls
+clean
+(quot 8 3)
+(defn myfun [] "yo wasp")
+myfun
+(myfun)
+(+ 1 1)
+lein test
+cd ..
+exit

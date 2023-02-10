@@ -7,5 +7,4 @@
   :main ^:skip-aot kataskeleton.core
   :target-path "target/%s"
   :profiles {:uberjar {:aot :all}}
-  :dev {:resource-paths ["test/resources"]}
-  )
+  :dev {:resource-paths ["test/resources"]})
