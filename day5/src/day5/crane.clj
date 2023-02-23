@@ -1,13 +1,14 @@
 (ns day5.crane)
 
-(defn- get-moved-crate [stacks from]
+(defn- get-crate-to-move [stacks from]
   (last (nth stacks from)))
 
 (defn- move-crate [stacks from to]
+  (let [crate (get-crate-to-move stacks from)]
   (map-indexed #(cond
-    (= % from) (drop-last %2)
-    (= % to) (conj %2 (get-moved-crate stacks from))
-    :else %2) stacks))
+    (= % from) (remove #{crate} %2)
+    (= % to) (conj %2 crate)
+    :else %2) stacks)))
 
 (defn move [stacks command]
   (let [from (dec (:from command))
