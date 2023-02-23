@@ -19,9 +19,9 @@
     :else %2) stacks))
 
 (defn move [stacks command]
-  (let [from (dec (get command :from))
-        to (dec (get command :to))
-        amount (get command :amount)]
+  (let [from (dec (:from command))
+        to (dec (:to command))
+        amount (:amount command)]
     (loop [moved stacks
            processed-amount 0]
       (if (= processed-amount amount)
