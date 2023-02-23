@@ -1,21 +1,18 @@
 (ns day5.crane)
 
-(defn- get-stack [stacks from]
-  (nth stacks from))
-
-(defn- peek-stack [stack]
+(defn- peek [stack]
   (take-last 1 stack))
 
-(defn- push-stack [stack crate]
+(defn- push [stack crate]
   (flatten (conj crate stack)))
 
-(defn- pop-stack [stack]
+(defn- remove-top [stack]
   (flatten (drop-last stack)))
 
 (defn- move-crate [stacks from to]
   (map-indexed #(cond
-    (= % from) (pop-stack %2)
-    (= % to) (push-stack %2 (peek-stack (get-stack stacks from)))
+    (= % from) (remove-top %2)
+    (= % to) (push %2 (peek (nth stacks from)))
     :else %2) stacks))
 
 (defn move [stacks command]
